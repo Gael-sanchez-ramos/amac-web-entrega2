@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Plataforma de empleo AMAC. Oportunidades que valoran tu experiencia.">
+    <title>Registro de candidato | AMAC</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+<a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+<header class="encabezado">
+    <div class="contenedor encabezado__interior">
+        <a class="marca" href="index.html"><img src="img/logo-amac.png" width="300" height="76" alt="AMAC, asociAMayores A.C. — Inicio"></a>
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="index.html">Buscar empleo</a>
+            <a href="mis-solicitudes.html">Mis solicitudes</a>
+            <a href="empresa-vacantes.html">Mi empresa</a>
+            <a href="#ayuda">Ayuda</a>
+            <a href="login.html">Volver a iniciar sesión</a>
+        </nav>
+    </div>
+</header>
+<main class="contenedor " id="principal" tabindex="-1">
+<div class="cabecera-editorial cabecera-editorial--centrada"><p>CREAR MI CUENTA</p><h1>Cuéntanos sobre ti</h1><p>Completa tus datos. Podemos ayudarte si lo necesitas.</p></div>
+<form class="formulario-registro" action="login.html#registro-demo" method="get" aria-label="Registro de candidato">
+<p>Demostración: tus datos no se envían ni se guardan.</p><fieldset><legend>Datos personales</legend><div class="campos"><div class="campo-formulario"><label for="nombre">Nombre(s)</label><input type="text" id="nombre" autocomplete="given-name" required></div><div class="campo-formulario"><label for="apellido-paterno">Apellido paterno</label><input type="text" id="apellido-paterno" autocomplete="family-name" required></div><div class="campo-formulario"><label for="apellido-materno">Apellido materno (opcional)</label><input type="text" id="apellido-materno"></div><div class="campo-formulario"><label for="edad">Edad</label><input type="number" id="edad" required min="18" max="120" inputmode="numeric"></div><div class="campo-formulario"><label for="sexo">Sexo</label><select id="sexo" required><option value="">Selecciona una opción</option><option>Mujer</option><option>Hombre</option><option>Prefiero no decirlo</option></select></div><div class="campo-formulario"><label for="estudios">Máximo nivel de estudios</label><select id="estudios" required><option value="">Selecciona una opción</option><option>Primaria</option><option>Secundaria</option><option>Preparatoria</option><option>Carrera técnica</option><option>Licenciatura</option><option>Posgrado</option><option>Otro</option></select></div></div></fieldset>
+<fieldset><legend>Dirección</legend><div class="campos"><div class="campo-formulario"><label for="calle">Calle y número</label><input type="text" id="calle" autocomplete="address-line1" required></div><div class="campo-formulario"><label for="colonia">Colonia</label><input type="text" id="colonia" autocomplete="address-line2" required></div><div class="campo-formulario"><label for="ciudad">Ciudad</label><input type="text" id="ciudad" autocomplete="address-level2" required></div><div class="campo-formulario"><label for="estado">Estado</label><input type="text" id="estado" autocomplete="address-level1" required></div><div class="campo-formulario"><label for="codigo-postal">Código postal</label><input type="text" id="codigo-postal" autocomplete="postal-code" required></div></div></fieldset>
+<fieldset><legend>Datos de contacto</legend><div class="campos"><div class="campo-formulario"><label for="correo-registro">Correo electrónico</label><input type="email" id="correo-registro" autocomplete="email" placeholder="nombre@correo.com" required></div><div class="campo-formulario"><label for="telefono">Teléfono celular</label><input type="tel" id="telefono" autocomplete="tel" required></div><div class="campo-formulario"><label for="clave-registro">Contraseña (mínimo 8 caracteres)</label><input type="password" id="clave-registro" autocomplete="new-password" required minlength="8"></div><div class="campo-formulario"><label for="contacto">Contacto preferido</label><select id="contacto" required><option value="">Selecciona una opción</option><option>Correo electrónico</option><option>Teléfono celular</option></select></div></div></fieldset>
+<fieldset><legend>Experiencia y habilidades</legend><div class="pila"><div class="campo-formulario"><label for="experiencia">Experiencia laboral</label><textarea id="experiencia" placeholder="Cuéntanos en qué has trabajado" required></textarea></div><div class="campo-formulario"><label for="habilidades">Habilidades</label><textarea id="habilidades" placeholder="Por ejemplo: comunicación, organización y trato amable" required></textarea></div></div></fieldset>
+<div class="aceptacion"><div class="opcion-aceptacion"><input type="checkbox" id="terminos" required><label for="terminos">Acepto los términos</label></div><details><summary>Consultar términos</summary><p>Los términos definitivos de uso serán proporcionados por AMAC antes de habilitar el registro. Esta maqueta no crea cuentas.</p></details></div>
+<div class="aceptacion"><div class="opcion-aceptacion"><input type="checkbox" id="privacidad" required><label for="privacidad">Acepto el aviso de privacidad</label></div><details><summary>Consultar aviso de privacidad</summary><p>El aviso de privacidad definitivo será proporcionado por AMAC antes de recopilar datos. Esta maqueta no envía ni almacena la información del formulario.</p></details></div>
+<button class="boton boton--coral boton--ancho" type="submit">Enviar registro</button><p class="texto-centrado">Tu cuenta necesita la revisión de AMAC antes de poder postularte.</p><a class="boton boton--ancho" href="login.html">Volver a iniciar sesión</a></form>
+</main>
+<footer class="pie contenedor"><p>AMAC · Envejecer es vivir.</p><section class="ayuda" id="ayuda" aria-labelledby="titulo-ayuda">
+    <h2 id="titulo-ayuda">¿Necesitas ayuda de AMAC?</h2>
+    <p>Podemos orientarte con tu registro y tus solicitudes. Llámanos y te ayudamos.</p>
+    <a class="boton boton--coral" href="tel:+528100000000">Llamar a AMAC: 81&nbsp;0000&nbsp;0000</a>
+    <details><summary>Ver ayuda para continuar</summary><p>Para buscar empleo, explora las vacantes y abre la que te interese. Crea tu cuenta para registrar tus datos. AMAC debe aprobar tu registro antes de que puedas postularte.</p><p>Si representas a una empresa, visita el panel de Mi empresa.</p></details>
+</section></footer>
+</body>
+</html>
