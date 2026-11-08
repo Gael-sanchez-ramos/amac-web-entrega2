@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Plataforma de empleo AMAC. Oportunidades que valoran tu experiencia.">
+    <title>Buscar empleo | AMAC</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+<a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+<header class="encabezado">
+    <div class="contenedor encabezado__interior">
+        <a class="marca" href="index.html"><img src="img/logo-amac.png" width="300" height="76" alt="AMAC, asociAMayores A.C. — Inicio"></a>
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="index.html" aria-current="page">Buscar empleo</a>
+            <a href="mis-solicitudes.html">Mis solicitudes</a>
+            <a href="empresa-vacantes.html">Mi empresa</a>
+            <a href="#ayuda">Ayuda</a>
+            <a href="login.html">Iniciar sesión</a>
+        </nav>
+    </div>
+</header>
+<main class="contenedor " id="principal" tabindex="-1">
+<section class="hero" aria-labelledby="titulo-inicio">
+    <div class="hero__presentacion"><div class="pila"><p class="hero__entrada">AMAC · OPORTUNIDADES CON EXPERIENCIA</p><h1 class="hero__titulo" id="titulo-inicio">Tu experiencia<br>abre caminos.</h1><p class="hero__subtitulo">Encuentra un empleo que valore todo lo que sabes.</p></div>
+    <aside class="acompanamiento" aria-label="Acompañamiento AMAC"><p class="acompanamiento__titulo">Envejecer<br>es vivir.</p><img class="acompanamiento__imagen" src="img/acompanamiento.svg" width="264" height="88" alt=""><p>A tu ritmo. Con orientación de AMAC.</p></aside></div>
+    <form class="busqueda" role="search" action="index.html#resultados" method="get"><div class="campo-formulario"><label for="busqueda">Empleo, empresa o ubicación</label><input type="search" id="busqueda" name="q" placeholder="¿Qué empleo buscas?"></div><button class="boton boton--azul" type="submit">Buscar vacantes</button></form>
+</section>
+<div class="filtros-resultados">
+    <aside class="filtros pila" aria-labelledby="titulo-filtros"><h2 id="titulo-filtros">Encuentra tu opción</h2>
+    <form class="pila" action="index.html#resultados" method="get"><div class="campo-formulario"><label for="horario">Horario</label><select id="horario" name="horario"><option value="">Todos los horarios</option><option>Matutino</option><option>Vespertino</option></select></div>
+    <div class="campo-formulario"><label for="categoria">Categoría</label><select id="categoria" name="categoria"><option value="">Todas las categorías</option><option>Atención al cliente</option><option>Ventas</option><option>Administración</option><option>Mantenimiento</option></select></div>
+    <button class="boton boton--azul" type="submit">Aplicar filtros</button><a class="boton" href="index.html#resultados">Limpiar filtros</a></form></aside>
+    <section class="pila" id="resultados" aria-labelledby="titulo-resultados"><h2 id="titulo-resultados">6 vacantes disponibles</h2><div class="lista-vacantes"><article class="tarjeta-vacante" aria-labelledby="titulo-atencion">
+    <p class="tarjeta-vacante__categoria">ATENCIÓN AL CLIENTE · MEDIO TIEMPO</p>
+    <h3 id="titulo-atencion">Auxiliar de atención</h3><p>Mercado del Barrio · Monterrey, N.L.</p>
+    <p class="tarjeta-vacante__sueldo">$8,500 MXN al mes</p>
+    <p>Horario matutino · Lunes a viernes<br>Tu experiencia cuenta. Te acompañamos al comenzar.</p>
+    <a class="boton boton--coral" href="vacante.html" aria-label="Ver vacante: Auxiliar de atención">Ver vacante</a>
+</article><article class="tarjeta-vacante" aria-labelledby="titulo-recepcion">
+    <p class="tarjeta-vacante__categoria">ATENCIÓN AL CLIENTE · MEDIO TIEMPO</p>
+    <h3 id="titulo-recepcion">Recepcionista</h3><p>Centro Vecinal · Monterrey, N.L.</p>
+    <p class="tarjeta-vacante__sueldo">$9,200 MXN al mes</p>
+    <p>Horario matutino · Lunes a viernes<br>Tu experiencia cuenta. Te acompañamos al comenzar.</p>
+    <a class="boton boton--coral" href="vacante-recepcion.html" aria-label="Ver vacante: Recepcionista">Ver vacante</a>
+</article><article class="tarjeta-vacante" aria-labelledby="titulo-biblioteca">
+    <p class="tarjeta-vacante__categoria">ATENCIÓN AL CLIENTE · MEDIO TIEMPO</p>
+    <h3 id="titulo-biblioteca">Auxiliar de biblioteca</h3><p>Lectura Abierta · Monterrey, N.L.</p>
+    <p class="tarjeta-vacante__sueldo">$8,000 MXN al mes</p>
+    <p>Horario matutino · Lunes a viernes<br>Tu experiencia cuenta. Te acompañamos al comenzar.</p>
+    <a class="boton boton--coral" href="vacante-biblioteca.html" aria-label="Ver vacante: Auxiliar de biblioteca">Ver vacante</a>
+</article><article class="tarjeta-vacante" aria-labelledby="titulo-ventas">
+    <p class="tarjeta-vacante__categoria">VENTAS · MEDIO TIEMPO</p>
+    <h3 id="titulo-ventas">Asesor de ventas</h3><p>Comercio Cercano · Monterrey, N.L.</p>
+    <p class="tarjeta-vacante__sueldo">$9,000 MXN al mes</p>
+    <p>Horario vespertino · Lunes a viernes<br>Tu experiencia cuenta. Te acompañamos al comenzar.</p>
+    <a class="boton boton--coral" href="vacante-ventas.html" aria-label="Ver vacante: Asesor de ventas">Ver vacante</a>
+</article><article class="tarjeta-vacante" aria-labelledby="titulo-administracion">
+    <p class="tarjeta-vacante__categoria">ADMINISTRACIÓN · TIEMPO COMPLETO</p>
+    <h3 id="titulo-administracion">Auxiliar administrativo</h3><p>Servicios del Norte · Monterrey, N.L.</p>
+    <p class="tarjeta-vacante__sueldo">$10,000 MXN al mes</p>
+    <p>Horario matutino · Lunes a viernes<br>Tu experiencia cuenta. Te acompañamos al comenzar.</p>
+    <a class="boton boton--coral" href="vacante-administracion.html" aria-label="Ver vacante: Auxiliar administrativo">Ver vacante</a>
+</article><article class="tarjeta-vacante" aria-labelledby="titulo-jardineria">
+    <p class="tarjeta-vacante__categoria">MANTENIMIENTO · MEDIO TIEMPO</p>
+    <h3 id="titulo-jardineria">Auxiliar de jardinería</h3><p>Jardines de la Comunidad · Monterrey, N.L.</p>
+    <p class="tarjeta-vacante__sueldo">$8,200 MXN al mes</p>
+    <p>Horario matutino · Lunes a viernes<br>Tu experiencia cuenta. Te acompañamos al comenzar.</p>
+    <a class="boton boton--coral" href="vacante-jardineria.html" aria-label="Ver vacante: Auxiliar de jardinería">Ver vacante</a>
+</article></div></section>
+</div>
+</main>
+<footer class="pie contenedor"><p>AMAC · Envejecer es vivir.</p><section class="ayuda" id="ayuda" aria-labelledby="titulo-ayuda">
+    <h2 id="titulo-ayuda">¿Necesitas ayuda de AMAC?</h2>
+    <p>Podemos orientarte con tu registro y tus solicitudes. Llámanos y te ayudamos.</p>
+    <a class="boton boton--coral" href="tel:+528100000000">Llamar a AMAC: 81&nbsp;0000&nbsp;0000</a>
+    <details><summary>Ver ayuda para continuar</summary><p>Para buscar empleo, explora las vacantes y abre la que te interese. Crea tu cuenta para registrar tus datos. AMAC debe aprobar tu registro antes de que puedas postularte.</p><p>Si representas a una empresa, visita el panel de Mi empresa.</p></details>
+</section></footer>
+</body>
+</html>
