@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Plataforma de empleo AMAC. Oportunidades que valoran tu experiencia.">
+    <title>Iniciar sesión | AMAC</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+<a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+<header class="encabezado">
+    <div class="contenedor encabezado__interior">
+        <a class="marca" href="index.html"><img src="img/logo-amac.png" width="300" height="76" alt="AMAC, asociAMayores A.C. — Inicio"></a>
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="index.html">Buscar empleo</a>
+            <a href="mis-solicitudes.html">Mis solicitudes</a>
+            <a href="empresa-vacantes.html">Mi empresa</a>
+            <a href="#ayuda">Ayuda</a>
+        </nav>
+    </div>
+</header>
+<main class="contenedor " id="principal" tabindex="-1">
+<div class="acceso">
+<section class="mensaje-marca" aria-label="Tu siguiente etapa"><div class="mensaje-marca__logo"><img src="img/logo-amac.png" width="300" height="76" alt="AMAC, asociAMayores A.C."></div><p class="mensaje-marca__titulo">Tu siguiente etapa<br>empieza contigo.</p><p class="mensaje-marca__texto">Tu próximo empleo empieza aquí.</p><p>Con orientación de AMAC, a tu ritmo.</p><a class="boton" href="#ayuda">¿Necesitas ayuda de AMAC?</a></section>
+<section class="acceso__cuenta pila" aria-labelledby="titulo-acceso"><h1 id="titulo-acceso">Inicia sesión para buscar empleo</h1><p class="aviso-registro" id="registro-demo" role="status">Recorrido de registro completado. En esta demostración no se creó una cuenta.</p>
+<form class="pila" action="mis-solicitudes.html" method="get"><div class="formulario-acceso"><div class="campo-formulario"><label for="correo">Correo electrónico</label><input type="email" id="correo" autocomplete="email" placeholder="nombre@correo.com" required></div><div class="campo-formulario"><label for="clave">Contraseña</label><input type="password" id="clave" autocomplete="current-password" required></div></div>
+<a class="enlace-secundario" href="#ayuda">¿Olvidaste tu contraseña?</a><p>Entra a tu cuenta para explorar vacantes. AMAC debe aprobar tu registro para postularte.</p>
+<p>Demostración: tus datos no se envían ni se guardan.</p><button class="boton boton--azul boton--ancho" type="submit">Iniciar sesión</button></form>
+<p class="texto-centrado">¿Buscas empleo y aún no tienes cuenta?</p><a class="boton boton--coral boton--ancho" href="registro-candidato.html">Crear cuenta para buscar empleo</a><a class="boton boton--ancho" href="index.html">Volver al inicio</a></section></div>
+</main>
+<footer class="pie contenedor"><p>AMAC · Envejecer es vivir.</p><section class="ayuda" id="ayuda" aria-labelledby="titulo-ayuda">
+    <h2 id="titulo-ayuda">¿Necesitas ayuda de AMAC?</h2>
+    <p>Podemos orientarte con tu registro y tus solicitudes. Llámanos y te ayudamos.</p>
+    <a class="boton boton--coral" href="tel:+528100000000">Llamar a AMAC: 81&nbsp;0000&nbsp;0000</a>
+    <details><summary>Ver ayuda para continuar</summary><p>Para buscar empleo, explora las vacantes y abre la que te interese. Crea tu cuenta para registrar tus datos. AMAC debe aprobar tu registro antes de que puedas postularte.</p><p>Si representas a una empresa, visita el panel de Mi empresa.</p></details>
+</section></footer>
+</body>
+</html>
