@@ -1,0 +1,39 @@
+/* Base para celular; ampliaciones progresivas para tablet y escritorio. */
+.contenedor { width: calc(100% - 2rem); max-width: var(--ancho-contenido); margin-inline: auto; }
+.encabezado { padding-block: var(--espacio-l); }
+.encabezado__interior { display: flex; flex-direction: column; gap: var(--espacio-l); align-items: center; }
+.navegacion { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--espacio-s); width: 100%; }
+.navegacion a { flex: 1 1 8rem; }
+main.contenedor { display: grid; gap: var(--espacio-l); padding-block: var(--espacio-xl); }
+.hero__presentacion, .busqueda, .filtros-resultados, .oferta-postulacion, .acceso, .campos, .acciones { display: grid; gap: var(--espacio-l); }
+.hero { display: grid; gap: var(--espacio-xl); }
+.pila, .lista-vacantes, .lista-solicitudes, .informacion-vacante { display: grid; gap: var(--espacio-l); min-width: 0; }
+.pila-compacta { display: grid; gap: var(--espacio-s); min-width: 0; }
+.formulario-registro { width: 100%; max-width: 50rem; justify-self: center; }
+.campo-completo { grid-column: 1 / -1; }
+.perfil { display: grid; gap: var(--espacio-l); align-items: center; }
+.pie { padding-block: var(--espacio-l) var(--espacio-3xl); }
+.ayuda { margin: var(--espacio-3xl) auto 0; width: 100%; max-width: 45rem; }
+.acceso { align-items: start; }
+.acceso__cuenta { min-width: 0; align-self: center; }
+@media (min-width: 48rem) {
+    .contenedor { width: calc(100% - 4rem); }
+    h1 { font-size: var(--texto-titulo); }
+    .campos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .acciones { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .busqueda { grid-template-columns: minmax(0, 1fr) auto; align-items: end; }
+    .perfil { grid-template-columns: minmax(0, 1fr) auto; }
+}
+@media (min-width: 64rem) {
+    .contenedor { width: calc(100% - 6rem); }
+    .encabezado { padding-block: var(--espacio-2xl); }
+    .encabezado__interior { flex-direction: row; align-items: flex-start; gap: var(--espacio-2xl); }
+    .navegacion { justify-content: flex-start; padding-top: 0; }
+    .navegacion a { flex: 0 1 auto; }
+    main.contenedor { padding-top: var(--espacio-4xl); }
+    .hero__presentacion { grid-template-columns: minmax(0, 1fr) 18.75rem; gap: var(--espacio-2xl); }
+    .filtros-resultados { grid-template-columns: 17.5rem minmax(0, 1fr); gap: var(--espacio-xl); align-items: start; }
+    .oferta-postulacion { grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: var(--espacio-xl); align-items: start; }
+    .acceso { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--espacio-4xl); }
+    .acciones { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--espacio-m); }
+}

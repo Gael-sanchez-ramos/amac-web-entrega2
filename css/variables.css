@@ -1,0 +1,39 @@
+/* Tokens del prototipo AMAC: Figma 3BkOcgQYNTJxL8vdlkGdiC. */
+:root {
+    --color-azul: #202945;
+    --color-coral: #ff815c;
+    --color-celeste: #cae4ef;
+    --color-fondo: #ffffff;
+    --color-texto: var(--color-azul);
+    --color-coral-hover: #f66c45;
+    --color-azul-hover: #334267;
+    --color-pendiente: #ffdaa6;
+    --color-aceptada: #d9efdf;
+    --color-rechazada: #f8dce0;
+    --color-foco: #202945;
+    --color-gris: #586079;
+    --fuente-base: "Work Sans", Helvetica, Arial, sans-serif;
+    --fuente-titulo: "Baskervville", Georgia, serif;
+    --texto-base: 1.125rem;
+    --texto-subtitulo: 1.5rem;
+    --texto-titulo: 2.625rem;
+    --peso-normal: 400;
+    --peso-destacado: 600;
+    --interlineado: 1.45;
+    --espacio-xs: 0.5rem;
+    --espacio-s: 0.75rem;
+    --espacio-m: 1rem;
+    --espacio-l: 1.5rem;
+    --espacio-xl: 2rem;
+    --espacio-2xl: 2.5rem;
+    --espacio-3xl: 3rem;
+    --espacio-4xl: 4rem;
+    --radio-s: 0.625rem;
+    --radio-m: 0.75rem;
+    --radio-l: 1rem;
+    --radio-xl: 1.25rem;
+    --radio-hero: 1.75rem;
+    --borde: 1px solid var(--color-azul);
+    --ancho-contenido: 84rem;
+    --alto-control: 3.5rem;
+}
