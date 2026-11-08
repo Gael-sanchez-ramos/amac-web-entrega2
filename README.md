@@ -68,9 +68,10 @@ Completar con los integrantes reales y sus aportaciones. No se generaron commits
 
 | Integrante | Aportación |
 | --- | --- |
-| Rossbel Rodríguez Rubio | Por completar |
-| Gael Sánchez Ramos | Por completar |
-| Ivanna Treviño Pérez | Por completar |
+| Rossbel Rodríguez Rubio | Maquetación de inicio de sesión (`login.html`) y formulario accesible de registro de candidato (`registro-candidato.html`) con validaciones y agrupación semántica. |
+| Gael Sánchez Ramos | Configuración base del repositorio, hojas de estilo compartidas (`css/`), tipografías y recursos (`fonts/`, `img/`), página principal de listado con buscador/filtros (`index.html`), vistas de detalle de vacantes (`vacante.html` y `vacante-*.html`) y documentación (`README.md`). |
+| Ivanna Treviño Pérez | Maquetación del panel de solicitudes del candidato con estados y cancelación (`mis-solicitudes.html`) y panel de vacantes y solicitudes recibidas de la empresa (`empresa-vacantes.html`). |
+
 
 ## Comprobaciones y evidencias
 
