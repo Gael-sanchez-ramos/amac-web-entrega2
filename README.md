@@ -71,12 +71,12 @@ En `css/componentes.css` y `css/layout.css` separamos los estilos por piezas reu
 
 ### Vista en escritorio (`index.html` — 1440px)
 
-[img/captura-index-escritorio.png]
+<img src="img/captura-index-escritorio.png" alt="Listado de vacantes en escritorio" width="100%">
 
 ### Vista en celular (`index.html` — 375px)
 
-[img/captura-index-celular.png]
+<img src="img/captura-index-celular.png" alt="Listado de vacantes en celular" width="375">
 
 ### Puntaje de Lighthouse – Accessibility (`index.html`)
 
-[img/captura-lighthouse.png]
+<img src="img/captura-lighthouse.png" alt="Puntaje de Lighthouse Accessibility" width="100%">
