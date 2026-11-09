@@ -1,104 +1,82 @@
-# Bolsa de Trabajo AMAC — Entrega 2
+# Bolsa de Trabajo AMAC — Entrega 2 (Maquetación en HTML y CSS)
 
-Maquetación estática en HTML y CSS para personas adultas mayores, basada en el [prototipo de Figma](https://www.figma.com/design/3BkOcgQYNTJxL8vdlkGdiC/Bolsa-de-Trabajo-AMAC?node-id=0-1).
+Maquetación web estática, responsiva y accesible de la plataforma de empleo para personas adultas mayores de **AMAC**, desarrollada a partir de nuestro [prototipo en Figma](https://www.figma.com/design/3BkOcgQYNTJxL8vdlkGdiC/Bolsa-de-Trabajo-AMAC?node-id=0-1).
 
-## Abrir el proyecto
+## Enlaces del proyecto
 
-Abre `index.html` en un navegador o usa Live Server desde esta carpeta. No requiere instalación, frameworks ni JavaScript.
+- **Sitio publicado en Vercel:** [amac-web-entrega2.vercel.app](https://amac-web-entrega2.vercel.app/index.html)
+- **Repositorio en GitHub:** [Gael-sanchez-ramos/amac-web-entrega2](https://github.com/Gael-sanchez-ramos/amac-web-entrega2)
 
-## Páginas y navegación
+## 1. Integrantes del equipo y aportaciones
 
-- `index.html`: buscador y filtros visuales, seis vacantes y enlaces a su detalle.
-- `vacante.html`: detalle de Auxiliar de atención. Las otras cinco tarjetas tienen sus propios archivos `vacante-*.html` con la misma estructura.
-- `login.html`: formulario visual de acceso y enlaces a registro y solicitudes.
-- `registro-candidato.html`: datos personales, dirección, contacto, experiencia, habilidades y consentimientos.
-- `mis-solicitudes.html`: tres solicitudes con estados Pendiente, Aceptada y Rechazada. El botón Cancelar solo está activo en la Pendiente; en las resueltas aparece deshabilitado con una explicación (RF-006).
-- `empresa-vacantes.html`: panel de la empresa, acciones visuales y dos solicitudes de ejemplo.
-
-Flujo de demostración: Buscar empleo → Ver vacante → Postularme → Iniciar sesión → Mis solicitudes. El enlace de acceso muestra la pantalla de ejemplo; no autentica a una persona.
-
-Además de las seis páginas obligatorias hay cinco detalles de vacante (`vacante-*.html`), uno por cada tarjeta del listado.
-
-## Estructura CSS
-
-- `css/variables.css`: colores, fuentes, tamaños, espaciados, bordes y radios del diseño.
-- `css/base.css`: fuentes locales, reset, tipografía, controles y foco visible.
-- `css/layout.css`: contenedor, distribución mobile-first y media queries a 48rem y 64rem.
-- `css/componentes.css`: navegación, botones, tarjetas, formularios, estados y ayuda.
-
-Las páginas cargan directamente los cuatro archivos.
-
-## Paleta y tipografías
-
-| Token | Valor | Uso |
-| --- | --- | --- |
-| `--color-azul` | `#202945` | Texto, cabeceras y botones primarios |
-| `--color-coral` | `#ff815c` | Presentación, botones y bordes |
-| `--color-celeste` | `#cae4ef` | Filtros y paneles de apoyo |
-| `--color-fondo` | `#ffffff` | Fondo y texto sobre azul |
-| `--color-gris` | `#586079` | Placeholders y botones deshabilitados |
-| `--color-pendiente` | `#ffdaa6` | Estado Pendiente |
-| `--color-aceptada` | `#d9efdf` | Estado Aceptada |
-| `--color-rechazada` | `#f8dce0` | Estado Rechazada |
-
-Work Sans 400/600 para texto y controles; Baskervville 600 para títulos principales. Archivos locales en `fonts/` con sus licencias OFL. Texto base de `1.125rem`, interlineado 1.45 y controles de al menos 44px. El texto sobre coral usa azul para mantener el contraste.
-
-## Componentes reutilizables para la Entrega 3
-
-`Encabezado`, `Navegacion`, `Pie`, `AyudaAmac`, `CabeceraEditorial`, `Boton`, `TarjetaVacante`, `TarjetaSolicitud`, `TarjetaEmpresa`, `EtiquetaEstatus`, `CampoFormulario`, `FormularioAcceso` y `FormularioRegistro`.
-
-## Adaptaciones respecto de Figma
-
-- Se mantienen los colores, las fuentes, las imágenes originales, la presentación coral y los paneles azules y celestes.
-- Se reemplazan las medidas rígidas del lienzo por contenedores fluidos, alturas naturales y columnas que se apilan en celular.
-- El listado pasa de tres a seis vacantes y las solicitudes de dos pendientes a tres estados diferentes para cumplir la rúbrica. Los registros adicionales son ficticios.
-- Encabezado y pie comunes en todas las páginas, incluido el acceso. La navegación permite llegar también al panel de empresa.
-- Se añaden etiquetas visibles, encabezados semánticos, enlace para saltar al contenido y ayuda desplegable.
-- El logo y la ilustración decorativa proceden del Figma; se guardan en `img/` y no dependen de enlaces temporales.
-
-## Alcance estático y datos pendientes
-
-No hay autenticación, envío de formularios, almacenamiento, filtrado, publicación de vacantes ni cancelación real de solicitudes. Los campos se pueden editar. Acceso y registro utilizan validación nativa del navegador y después navegan a la siguiente pantalla. Sus controles tienen ID y etiquetas, pero omiten deliberadamente `name` para que el navegador no incluya información personal ni contraseñas en la URL. El registro no crea cuentas: lo indica expresamente en la pantalla siguiente. Los botones de gestión de vacantes y cancelación son visuales, como permite la entrega. No introduzcas información personal real. Los términos y el aviso de privacidad definitivos deben ser entregados por AMAC: no se inventaron documentos legales.
-
-Los teléfonos son **números de ejemplo** (AMAC: 81 0000 0000; empresa de la vacante `vacante.html`: 81 0000 0001). El botón "Llamar a AMAC" está en la ayuda de todas las páginas (RF-052) y el botón "Llamar" solo aparece en `vacante.html` (RF-051); ambos son enlaces `tel:`. Cuando AMAC y la empresa confirmen sus números reales, hay que cambiar el texto y el `href` de esos enlaces. La ayuda desplegable ya está disponible.
-
-## Equipo
-
-Completar con los integrantes reales y sus aportaciones. No se generaron commits atribuidos a otras personas.
-
-| Integrante | Aportación |
+| Integrante | Qué hizo en esta entrega |
 | --- | --- |
-| Rossbel Rodríguez Rubio | Maquetación de inicio de sesión (`login.html`) y formulario accesible de registro de candidato (`registro-candidato.html`) con validaciones y agrupación semántica. |
-| Gael Sánchez Ramos | Configuración base del repositorio, hojas de estilo compartidas (`css/`), tipografías y recursos (`fonts/`, `img/`), página principal de listado con buscador/filtros (`index.html`), vistas de detalle de vacantes (`vacante.html` y `vacante-*.html`) y documentación (`README.md`). |
-| Ivanna Treviño Pérez | Maquetación del panel de solicitudes del candidato con estados y cancelación (`mis-solicitudes.html`) y panel de vacantes y solicitudes recibidas de la empresa (`empresa-vacantes.html`). |
+| **Gael Sánchez Ramos** | Configuración inicial del repositorio, variables y estructura base de CSS (`css/`), integración de fuentes e imágenes (`fonts/`, `img/`), maquetación del listado de vacantes con buscador y filtros (`index.html`) y páginas de detalle de vacantes (`vacante.html` y `vacante-*.html`). |
+| **Rossbel Rodríguez Rubio** | Maquetación de la página de inicio de sesión (`login.html`), formulario accesible de registro de candidato (`registro-candidato.html`) con agrupación semántica (`fieldset`/`legend`), validaciones nativas y pruebas de accesibilidad en Lighthouse. |
+| **Ivanna Treviño Pérez** | Maquetación del panel de solicitudes del candidato con los distintos estatus y botón de cancelación (`mis-solicitudes.html`), panel de vacantes y solicitudes recibidas de la empresa (`empresa-vacantes.html`) y capturas responsivas del sitio. |
 
+## 2. Páginas maquetadas y flujo de navegación
 
-## Comprobaciones y evidencias
+El proyecto incluye las 6 páginas obligatorias (más 5 vistas adicionales de detalle para que todas las tarjetas del listado sean navegables):
 
-Las comprobaciones locales se documentan en `VERIFICACION.md`. Estado actual:
+1. `index.html` — Listado de 6 vacantes con buscador, filtros por horario y categoría, y sección de acompañamiento AMAC.
+2. `vacante.html` — Detalle de la vacante con información del puesto, botón **Postularme** y botón **Llamar** directo a la empresa (RF-051).
+3. `login.html` — Inicio de sesión para candidatos y enlace a creación de cuenta.
+4. `registro-candidato.html` — Formulario de registro dividido en datos personales, dirección, contacto, experiencia laboral y aceptación de términos y privacidad.
+5. `mis-solicitudes.html` — Historial con 3 solicitudes en estatus *Pendiente*, *Aceptada* y *Rechazada*. El botón **Cancelar solicitud** solo está activo en la pendiente y deshabilitado con explicación en las ya resueltas (RF-006).
+6. `empresa-vacantes.html` — Panel de empresa con el listado de sus vacantes publicadas, controles de gestión y sección de solicitudes recibidas (RF-022).
 
-- [x] Revisar las páginas a 320, 768, 1024 y 1440px sin desplazamiento horizontal.
-- [x] Recorrer todos los controles con Tab y comprobar el foco.
-- [x] Verificar el zoom al 200 % sin desplazamiento horizontal (equivale a 720 y 384px de ancho).
-- [ ] Validar cada página con W3C: cero errores.
-- [ ] Ejecutar Lighthouse Accessibility en `index.html`: al menos 90 puntos; guardar la captura en `img/`.
-- [x] Añadir capturas de `index.html` en celular y escritorio (abajo).
-- [ ] Revisar a mano con Shift+Tab y Enter, y el zoom al 200 % en el navegador real.
+**Flujo para la demo:** `index.html` (Buscar empleo) → `vacante.html` (Ver vacante) → `login.html` (Postularme / Iniciar sesión) → `mis-solicitudes.html` (Mis solicitudes). En todas las páginas se incluye el encabezado de navegación y el pie de página con el botón visible para llamar a AMAC (RF-052).
 
-### Capturas de `index.html`
+## 3. Paleta de colores y tipografías (Variables CSS)
 
-Escritorio (1440px):
+Definidas en `css/variables.css` a partir del diseño en Figma, cuidando un contraste mínimo superior a 4.5:1 para personas adultas mayores:
 
-![Listado de vacantes en escritorio](img/captura-index-escritorio.png)
+| Variable CSS | Valor | Uso principal |
+| --- | --- | --- |
+| `--color-azul` | `#202945` | Texto principal, encabezados editoriales y botones primarios |
+| `--color-coral` | `#ff815c` | Bloques destacados (hero), botones de acción y bordes de tarjetas |
+| `--color-celeste` | `#cae4ef` | Paneles laterales de filtros, login y bloques de apoyo |
+| `--color-fondo` | `#ffffff` | Fondo general de página y texto claro sobre fondo azul |
+| `--color-gris` | `#586079` | Texto de placeholders y controles deshabilitados |
+| `--color-pendiente` | `#ffdaa6` | Etiqueta de estatus *Pendiente* |
+| `--color-aceptada` | `#d9efdf` | Etiqueta de estatus *Aceptada* |
+| `--color-rechazada` | `#f8dce0` | Etiqueta de estatus *Rechazada* |
+| `--fuente-base` | `"Work Sans", sans-serif` | Cuerpo de texto, etiquetas, botones y formularios (400 y 600) |
+| `--fuente-titulo` | `"Baskervville", serif` | Títulos principales (`h1`) y cabeceras destacadas (600) |
+| `--texto-base` | `1.125rem` (18px) | Tamaño mínimo de texto en todo el sitio, escalable al 200 % |
+| `--alto-control` | `3.5rem` (56px) | Altura mínima de botones y campos para facilitar el clic (> 44px) |
 
-Celular (375px):
+## 4. Componentes reutilizables identificados (para la Entrega 3 en React)
 
-![Listado de vacantes en celular](img/captura-index-celular.png)
+En `css/componentes.css` y `css/layout.css` separamos los estilos por piezas reutilizables pensando en su migración a componentes de React:
 
-## Publicación
+- `<Encabezado />` y `<Navegacion />` (`.encabezado`, `.navegacion`): barra superior con logo de AMAC, enlaces principales e indicador de página activa (`aria-current="page"`).
+- `<Pie />` y `<AyudaAmac />` (`.pie`, `.ayuda`): pie de página común con el bloque de orientación desplegable (`<details>`) y botón de llamada directa a AMAC.
+- `<Boton />` (`.boton`, `.boton--coral`, `.boton--azul`, `.boton--ancho`): botones y enlaces de acción con tamaño táctil amplio y estados `:hover`, `:focus-visible` y `:disabled`.
+- `<TarjetaVacante />` (`.tarjeta-vacante`): tarjeta reutilizada en las 6 ofertas de `index.html` con categoría, título, empresa, sueldo, horario y enlace al detalle.
+- `<TarjetaSolicitud />` (`.tarjeta-solicitud`): tarjeta de seguimiento de postulaciones del candidato en `mis-solicitudes.html`.
+- `<TarjetaEmpresa />` (`.tarjeta-empresa`): tarjeta de administración de vacantes publicadas en `empresa-vacantes.html`.
+- `<EtiquetaEstatus />` (`.etiqueta-estatus` y modificadores `--pendiente`, `--aceptada`, `--rechazada`, `--aprobada`): insignia visual para el estado de solicitudes y empresas.
+- `<CampoFormulario />` (`.campo-formulario`): contenedor de `<label>` visible + `<input>` / `<select>` / `<textarea>` reutilizado en el buscador, filtros, login y registro.
+- `<CabeceraEditorial />` (`.cabecera-editorial`): bloque superior de título y contexto en páginas interiores.
 
-Pendientes la URL del repositorio y la URL pública. Para Vercel: importar el repositorio, usar preset Other y seleccionar `Proyecto_Final` como Root Directory si el repositorio incluye las demás carpetas de ejercicios. Si se publica solo esta carpeta como repositorio independiente, la raíz ya es la correcta. No requiere comando de compilación. La configuración de GitHub y Vercel no forma parte de los archivos HTML/CSS ni se realizó automáticamente.
+## 5. Ajustes respecto al prototipo de Figma
 
-### Estado de sesión en la maqueta
+- En `index.html` ampliamos el listado de 3 a 6 vacantes y en `mis-solicitudes.html` mostramos 3 solicitudes con estados distintos (*Pendiente*, *Aceptada* y *Rechazada*) para cumplir con todos los requisitos del entregable.
+- Reemplazamos los anchos fijos del lienzo de Figma por contenedores fluidos (`min-width` con Grid y Flexbox *mobile-first*) para evitar cualquier scroll horizontal desde 320px hasta 1440px y al hacer zoom al 200 %.
+- Añadimos mejoras de accesibilidad sobre el diseño original: enlace *"Saltar al contenido"* al presionar `Tab`, contorno de foco visible (`.saltar-contenido` y `:focus-visible`) y etiquetas `<label>` explícitas en todos los controles.
 
-Las páginas públicas muestran “Iniciar sesión”. En login se oculta ese enlace; en registro se muestra “Volver a iniciar sesión”. Los paneles de solicitudes y empresa muestran “Cerrar sesión”, que vuelve a `index.html`. Estos estados son estáticos y no representan autenticación real.
+## 6. Capturas de pantalla y validación de accesibilidad
+
+### Vista en escritorio (`index.html` — 1440px)
+
+[img/captura-index-escritorio.png]
+
+### Vista en celular (`index.html` — 375px)
+
+[img/captura-index-celular.png]
+
+### Puntaje de Lighthouse – Accessibility (`index.html`)
+
+[img/captura-lighthouse.png]
