@@ -26,7 +26,16 @@ El proyecto incluye las 6 páginas obligatorias (más 5 vistas adicionales de de
 5. `mis-solicitudes.html` — Historial con 3 solicitudes en estatus *Pendiente*, *Aceptada* y *Rechazada*. El botón **Cancelar solicitud** solo está activo en la pendiente y deshabilitado con explicación en las ya resueltas (RF-006).
 6. `empresa-vacantes.html` — Panel de empresa con el listado de sus vacantes publicadas, controles de gestión y sección de solicitudes recibidas (RF-022).
 
+### Página adicional
+
+- `perfil.html`: edición de perfil de demostración con datos ficticios
+  precargados. Permite editar los campos y regresar a Mis solicitudes,
+  pero no guarda los cambios.
+
 **Flujo para la demo:** `index.html` (Buscar empleo) → `vacante.html` (Ver vacante) → `login.html` (Postularme / Iniciar sesión) → `mis-solicitudes.html` (Mis solicitudes). En todas las páginas se incluye el encabezado de navegación y el pie de página con el botón visible para llamar a AMAC (RF-052).
+
+**Recorrido de perfil:** Mis solicitudes → Editar mi perfil →
+Guardar cambios (demostración) → Mis solicitudes.
 
 ## 3. Paleta de colores y tipografías (Variables CSS)
 
@@ -80,3 +89,12 @@ En `css/componentes.css` y `css/layout.css` separamos los estilos por piezas reu
 ### Puntaje de Lighthouse – Accessibility (`index.html`)
 
 <img src="img/captura-lighthouse.jpeg" alt="Puntaje de Lighthouse Accessibility" width="100%">
+
+## Pruebas finales
+
+
+- W3C: las páginas revisadas pasaron la validación sin errores.
+- Teclado: el recorrido con Tab, Shift+Tab y Enter funcionó correctamente.
+- Pantallas: revisamos 320, 768, 1024 y 1440 px sin recortes, elementos encimados ni desplazamiento horizontal.
+- Zoom al 200 %: el contenido siguió siendo legible y los controles se pudieron utilizar sin problemas.
+- Recorrido de perfil publicado en Vercel: funcionó el acceso desde “Mis solicitudes”, la edición de los campos y el regreso con el aviso de demostración. Los cambios no se almacenan.
