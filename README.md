@@ -79,4 +79,4 @@ En `css/componentes.css` y `css/layout.css` separamos los estilos por piezas reu
 
 ### Puntaje de Lighthouse – Accessibility (`index.html`)
 
-<img src="img/captura-lighthouse.png" alt="Puntaje de Lighthouse Accessibility" width="100%">
+<img src="img/captura-lighthouse.jpeg" alt="Puntaje de Lighthouse Accessibility" width="100%">
